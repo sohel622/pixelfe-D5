@@ -46,4 +46,13 @@ return [
     'resend' => [
         'key' => env('RESEND_KEY'),
     ],
+
+    'supabase' => [
+        'url' => env('SUPABASE_URL'),
+        'anon_key' => env('SUPABASE_ANON_KEY'),
+        'service_role_key' => env('SUPABASE_SERVICE_ROLE_KEY'),
+        'email_redirect_to' => env('SUPABASE_EMAIL_REDIRECT_TO', env('APP_URL')),
+        'otp_enabled' => env('SUPABASE_OTP_ENABLED', true),
+        'storage_bucket' => env('SUPABASE_STORAGE_BUCKET', 'pixelfed'),
+    ],
 ];
